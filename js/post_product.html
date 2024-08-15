@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <title>ABC E-Commerce</title>
+</head>
+
+<body >
+    <div class="header">
+        <h1>ABC add product</h1>
+    </div>
+    <div class="form">
+    <form id= addproduct> 
+        <label for="name"> <p>Product Name:</p></label>
+        <input type="text" id="name" name="name" maxlength="100"><br>
+
+        <label for="imagepath"><p>Image path:</p> </label>
+        <input type="text" id="imagepath" name="imagepath" maxlength="200"><br>
+
+        <label for="description"><p>Description</p> </label>
+        <textarea id="description" name="description" rows="3" maxlength="100"></textarea><br>
+
+        <label for="category"><p> Category: </p></label>
+        <select id="category" name="category">
+            <option value="1">Category 1</option>
+            <option value="2">Category 2</option>
+            <option value="3">Category 3</option>
+        </select><br>
+
+        <label for="price"><p>Price:</p> </label>
+        <input type="number" id="price" name="price" step="0.01" max="99999999.99">
+
+        <button type="button" onclick="addproduct()"> Add Product</button>
+        <button type="button" onclick="cancel()"> Cancel</button>
+    </form>
+    </div>
+</body>
+
+</html>
